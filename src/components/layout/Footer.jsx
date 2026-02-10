@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <footer className="bg-soft-mint text-deep-green pt-16 pb-8 border-t border-deep-green/5">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                     {/* Brand Column */}
-                    <div className="col-span-1 md:col-span-1">
+                    <div className="col-span-1">
                         <Link to="/" className="inline-block mb-6">
                             <div className="flex items-center gap-3">
                                 <img
@@ -32,23 +32,20 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-6 text-deep-green">Company</h4>
-                        <ul className="space-y-4">
-                            <li><Link to="/about" className="text-gray-600 hover:text-energy-green transition-colors text-sm">About Us</Link></li>
-                            <li><Link to="/services" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Our Services</Link></li>
-                            <li><Link to="/contact" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Contact</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Services */}
-                    <div>
-                        <h4 className="text-lg font-semibold mb-6 text-deep-green">Expertise</h4>
-                        <ul className="space-y-4">
-                            <li className="text-gray-600 text-sm">Machine Learning Solutions</li>
-                            <li className="text-gray-600 text-sm">Data Science Consulting</li>
-                            <li className="text-gray-600 text-sm">LLM Development</li>
-                            <li className="text-gray-600 text-sm">Technical Training</li>
-                        </ul>
+                        <h4 className="text-lg font-semibold mb-6 text-deep-green">Explore</h4>
+                        <div className="grid grid-cols-2 gap-4">
+                            <ul className="space-y-4">
+                                <li><Link to="/work" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Work</Link></li>
+                                <li><Link to="/technologies" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Technologies</Link></li>
+                                <li><Link to="/how-we-work" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Process</Link></li>
+                                <li><Link to="/blogs" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Blogs</Link></li>
+                            </ul>
+                            <ul className="space-y-4">
+                                <li><Link to="/careers" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Careers</Link></li>
+                                <li><Link to="/faq" className="text-gray-600 hover:text-energy-green transition-colors text-sm">FAQ</Link></li>
+                                <li><Link to="/contact" className="text-gray-600 hover:text-energy-green transition-colors text-sm">Contact</Link></li>
+                            </ul>
+                        </div>
                     </div>
 
                     {/* Contact */}
@@ -56,8 +53,8 @@ const Footer = () => {
                         <h4 className="text-lg font-semibold mb-6 text-deep-green">Get in Touch</h4>
                         <ul className="space-y-4">
                             <li className="text-gray-600 text-sm">Pune, Maharashtra, India</li>
-                            <li className="text-gray-600 text-sm">contact@aimagic.tech</li>
-                            <li className="text-gray-600 text-sm">+91 98765 43210</li>
+                            <li className="text-gray-600 text-sm">info@aimagictechnologies.com</li>
+                            <li className="text-gray-600 text-sm">+91 7040187220</li>
                         </ul>
                     </div>
                 </div>
